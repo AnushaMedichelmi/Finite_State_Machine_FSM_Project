@@ -611,9 +611,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  enemySpeed: 0
-  goToDistance: 0
-  attackDistance: 0
+  enemySpeed: 15
+  goToDistance: 10
+  attackDistance: 2
   target: {fileID: 128476080}
   playerTag: Player
 --- !u!1 &1456626511
