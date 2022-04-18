@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RigidBodyFPSController
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -203,6 +207,11 @@ MonoBehaviour:
   playerSpeed: 8
   rotationSpeed: 78
   targetVelocity: {x: 0, y: 0, z: 0}
+--- !u!4 &128476080 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+  m_PrefabInstance: {fileID: 128476074}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &540553753
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -601,6 +610,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1484d9190b6873f48b2a3ed1b8a0af1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 0
+  enemySpeed: 0
+  goToDistance: 0
+  attackDistance: 0
+  target: {fileID: 128476080}
+  playerTag: Player
 --- !u!1 &1456626511
 GameObject:
   m_ObjectHideFlags: 0
