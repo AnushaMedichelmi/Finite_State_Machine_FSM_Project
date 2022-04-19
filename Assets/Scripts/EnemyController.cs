@@ -93,13 +93,14 @@ public class EnemyController : MonoBehaviour
         if(currentTime < 0f)
         {
             playerController.health--;
+            Debug.Log(playerController.health);
             currentTime =attackTime;
         }
         if(playerController.health < 0)
         {
             currentState= STATE.DEAD;
         }
-        if (Vector3.Distance(transform.position, target.position) < attackDistance)
+        if (Vector3.Distance(transform.position, target.position) > attackDistance)
         {
             currentState = STATE.GOTO;
         }
